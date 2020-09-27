@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <title>Complete a Form</title>
+    <style>
+    	* {
+    		margin: 0;
+    		padding: 0;
+    	}
+		body {
+			font: 87.5% Arial, Helvetica, sans-serif;
+			width: 500px;
+		    margin: 20px auto;
+		    padding: 20px;
+		    border: 2px solid blue;
+		}
+		h1 {
+			color: blue; 
+			font-size: 140%;
+		}
+		h2 {
+			font-size: 115%;
+			padding: .5em 0;
+		}
+		label {
+			color: blue;
+			float: left;
+			width: 8em;
+			font-weight: bold;
+			text-align: left;
+		}
+		input {
+			width: 15em;
+			margin: 0 0 .5em 1em;
+		}
+		#button, #reset {
+			width: 7em;
+			background-color: silver;
+			box-shadow: 2px 2px 0 blue; }
+		#button {
+			margin-left: 9em;
+		}
+        input[type="checkbox"]
+        {
+            width:13px;
+        }
+	</style>
+</head>
+
+<body>
+<h1>Please complete our survey</h1>
+<form name="myform" action="survey_data.html" method="get">
+	
+	<h2>Contact information</h2>
+	<label for="email">Email address:</label>
+    <input type="email" name="email" id="email" autofocus required><br>
+    <label for="firstname">First name:</label>
+    <input type="text" name="firstname" id="firstname" required><br>
+    <label for="lastname">Last name:</label>
+    <input type="text" name="lastname" id="lastname" required><br>
+    
+    <h2>Geographic information</h2>
+    <label for="state">State:</label>
+    <input type=text name="state" id="state" placeholder="Two Characters" required pattern = "[A-Za-Z]{2}"><br>
+    <label for="zipcode">Zip Code:</label>
+    <input type="text" name="zipcode" id="zipcode" placeholder= "12345"
+    required pattern = "\d{5}"> <br>
+    
+    <h2>How Did you hear about us?</h2>
+    <label for ="button1">Web Search:</label>
+    <input type="checkbox" name="button1" id="button1" value="Websearch"> <br>
+    <label for ="button2">Facebook</label>
+    <input type = "checkbox" name = "button2" id="button2" value="Facebook"> <br>
+    <label for ="button3">Twitter</label>
+    <input type ="checkbox" name ="button3" id="button3" value="Twitter"> <br>
+    <label for ="button4">Email</label>
+    <input type ="checkbox" name ="button4" id="button4" value="Email"> <br>
+    <h2>Thank you for taking our survey!</h2>
+    <input type="submit" name="button" id="button" value="Submit">
+    <input type="reset" name="reset" id="reset"> 
+</form>
+</body>
+</html>
