@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Show letter grade</title>
+	<script>
+		
+        
+        var user = 0;
+        while (user != 999){
+        user= prompt("Enter a number grade from 0 through 100\nenter 999 to end entry");
+        
+        if(user==999)
+            break;
+
+            if(user > 100 ||user < 0)
+            {continue;}
+        
+        var grade;
+        if (user <= 100 && user >= 88)
+            {grade ='A';}
+        else if (user <= 87 && user >= 80)
+            {grade ='B';}
+        else if (user <= 79 && user >= 68)
+            {grade ='C';}
+        else if (user <= 67 && user >= 60)
+            {grade ='D';}
+        else if (user < 60 && user >= 0)
+            {grade ='F';}
+        
+        
+        alert("Number Grade = " +user+ "\nNumber Grade= "+grade);
+        }
+        
+    </script>
+</head>
+    <header>
+        <h1>This page is displayed after the JavaScript is executed</h1>
+    </header>
+<body>
+	<main>
+    	
+        <h2> I have recently discovered citypop.<br>I really like it, and it gives me a chance to practice unique HTML ideas.</h2>
+        
+        <p>Ride On Time - Tatsuo Yamashita</p>
+<audio controls autoplay>
+     <source src="sound/rideontime.mp3">
+</audio>
+	</main>
+</body>
+</html>
+
+<style>
+    html{
+        background-color:black;
+    }
+    h1
+    {
+        text-decoration: underline;
+        font-size: 150%;
+
+    }
+    h2
+    {
+        font-size: 16px;
+                padding-left: 10px;
+        margin-left: 10px;
+     }
+    p
+    {
+        color:black;
+        padding-left: 400px;
+    }
+    body
+    {
+        width:800;
+        background-color: palevioletred;
+        margin: auto;
+        border: solid 40px black;
+    }
+    header
+    {
+        border-bottom: 3px black solid;
+        text-align: center
+    }
+    audio
+    {
+        margin: 0px 0px 150px 360px
+    }
+    </style>
