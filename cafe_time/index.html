@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tuxedo Cat Coffee</title>
+    <link type="text/css" rel="stylesheet" href="cafe.css">
+    <script src = "order.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+</head>
+<body onload="preload(['images/biscotti.jpg','images/cappuccino.jpg','images/coffee.jpg','images/expresso.jpg','images/latte.jpg','images/scone.jpg'])">
+    <header>
+        <img src="images/logo.png" alt="Tuxedo Cat Coffee"/>
+    </header>
+    <main>
+        <form id="order_form" name="order_form" action="checkout.html" method="get">
+            <section id="menu">
+            	<h2>Menu</h2>
+            	<p>Click an item to add it to your order.</p>
+            	<ul id="imageList">
+            		<li><a href="#"><img id="images/espresso_info.jpg" src="images/espresso.jpg" alt="espresso"
+                    onclick = "money (1.95, 'Espresso', 'order')"
+                    onmouseover = "rollover(this,'images/espresso_info.jpg')" 
+                    onmouseout = "mouseaway(this,'images/espresso.jpg')"/></a></li>
+            		<li><a href="#"><img id="images/latte_info.jpg" src="images/latte.jpg" alt="latte"
+                    onclick = "money (2.95, 'Latte', 'order')"
+                    onmouseover = "rollover(this,'images/latte_info.jpg')" 
+                    onmouseout = "mouseaway(this,'images/latte.jpg')"/></a></li>
+            		<li><a href="#"><img id="images/cappuccino_info.jpg" src="images/cappuccino.jpg" alt="cappuccino"
+                    onclick = "money (3.45, 'Cappuccino', 'order')"
+                    onmouseover = "rollover(this,'images/cappuccino_info.jpg')" 
+                    onmouseout = "mouseaway(this,'images/cappuccino.jpg')"/></a></li>
+            		<li><a href="#"><img id="images/coffee_info.jpg" src="images/coffee.jpg" alt="coffee"
+                    onclick = "money (1.75, 'Coffee', 'order')"
+                    onmouseover = "rollover(this,'images/coffee_info.jpg')" 
+                    onmouseout = "mouseaway(this,'images/coffee.jpg')"/></a></li>
+            		<li><a href="#"><img id="images/biscotti_info.jpg" src="images/biscotti.jpg" alt="biscotti"
+                    onclick = "money (1.95, 'Biscotti', 'order')"
+                    onmouseover = "rollover(this,'images/biscotti_info.jpg')" 
+                    onmouseout = "mouseaway(this,'images/biscotti.jpg')"/></a></li>
+            		<li><a href="#"><img id="images/scone_info.jpg" src="images/scone.jpg" alt="scone"
+                    onclick = "money (2.95, 'Scone', 'order')"
+                    onmouseover =  "rollover(this,'images/scone_info.jpg')" 
+                    onmouseout = "mouseaway(this,'images/scone.jpg')"/></a></li>
+            	</ul>
+            </section>
+
+            <section>
+            	<h2>Your Order</h2>
+            	<section>
+            		<select id="order" name="order" size="6">
+            		</select>
+            		<p id="total"> &nbsp;</p>            		
+           		</section>
+            	<section id="buttons">
+           			<input type="button" onclick="location.href='checkout.html'" name="place_order" id="place_order" value="Place Order">
+           			<input type="button"
+                    onclick="erase()" name="clear_order" id="clear_order" value="Clear Order">				            		
+            	</section>
+            </section>   
+
+
+
+        </form> 
+    </main> 
+</body>
+</html>
