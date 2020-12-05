@@ -1,0 +1,179 @@
+
+html
+{
+    position: 0px 0px 0px 0px;
+    background-image: url(../images/WebpageBackground.jpg);
+    background-repeat: repeat;
+}
+
+header
+{
+    background-color: orange;
+    padding-bottom: 50px;
+    border-bottom: solid 2px black;
+    padding-bottom:0px;
+}
+
+.aumw
+{
+    float:left;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.head
+{
+    color:white;
+    font-size: 220%;
+    margin-left:200px;
+    padding-top: 15px;
+    padding-bottom: 0px
+}
+
+.slogan
+{
+    color: white;
+    font-size: 200%;
+    padding-top:0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    margin-left:270px;
+}
+
+body
+{
+width:800px; /*800px Now the rest of my page should be adaptive on its own.*/
+margin:auto;
+background-color: white;
+border: solid orange 2px;
+box-shadow: 0px 0px 50px orange;
+}
+
+main
+{
+    padding-left: 5px;
+    width: 65%;
+    float:right;
+    border-left: 2px dotted orange;
+}
+
+#data
+{
+    padding-left: 5px;
+    padding right:5px;
+    margin-right: 10px;
+}
+
+aside
+{
+width: 10%; /*width 160px*/
+    
+}
+
+footer
+{
+    background: orange;
+    padding-top:10px;
+    padding-bottom: 10px;
+    border-top: solid 2px black;
+    text-align: center;
+    color:white;
+    clear:  both;
+}
+
+
+
+
+#nav_menu{
+       background-color: black;
+    overflow: none;
+    margin-top: -16px;
+}
+
+#nav_menu ul {
+    margin-left: 0px
+    list-style: none;
+    position: relative; 
+}
+#nav_menu ul li { float: left; 
+}
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}               
+#nav_menu ul ul li { float: none; 
+}
+#nav_menu ul li:hover > ul {
+    display: block; 
+}
+#nav_menu > ul::after {
+    content: "";
+    display: block;
+    clear: both; 
+}
+#nav_menu ul {	list-style-type: none; }
+#nav_menu ul li{ float: left;}
+#nav_menu ul li a {
+    text-align: center;
+    display: block;
+    width: 251px;
+    padding: 10px 0;      /* padding above and below a elements */
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+#nav_menu ul li a.lastitem { border-right: none; }	
+#nav_menu ul li a.current { color: orange; }
+#nav_menu ul li a:active {color: orange;}
+#nav_menu ul li a:hover {background-color: grey;}
+
+
+.navhead
+{
+    padding-left: 40%; /*padding-left:39px; */
+}
+
+#nav_list_left ul
+  {
+            list-style-type: none;
+            margin-left: 0px;
+            margin-bottom: 3px;
+            padding-bottom: 3px;
+  }
+#nav_list_left ul li
+  {
+            margin-bottom: 5px;
+            width:120px;
+            border: 2px solid black;
+  }
+#nav_list_left ul li a
+  {
+      
+            background-color: black;
+            color:white;
+            display: block;
+            text-decoration: none;
+            padding: 10px;
+  }
+#nav_list_left ul li a:hover
+  {
+            background-color:orange;
+  }
+#nav_list_left ul li a:focus
+  {
+            background-color: orange;
+  }
+#nav_list_left ul li a.current
+{
+    background-color: orange;
+}
+#nav_list_top ul
+{
+    list-style-type: none;
+    position: relative;
+}
+#nav_list_list ul li
+{
+    
