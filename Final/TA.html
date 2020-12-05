@@ -1,0 +1,82 @@
+<!-- Riley Taylor CSCI4970 Front end web development
+This is a complete redesign of the Computer Science Web page for AUM
+I plan on mixing it up and adding a few extra things as well!--> 
+
+<html lang = en;>
+    
+<head>
+<link rel = stylesheet href="Styles/TA.css">
+</head>
+    
+    
+    
+<body>
+
+<header>
+ <h1>
+    <img class ="aumw" src="images/AUM%20LOGO%20WHITE.jpg">
+</h1>
+     <h1 class ="head"> Auburn University At Montgomery</h1>
+    <h2 class ="slogan">
+    <i>Excellence is our standard!</i>
+    </h2>
+    
+</header>
+<nav id="nav_menu">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li ><a href="#">Information</a>
+            <ul>
+                <li><a href="program-desc.html">Program Description</a></li>
+                <li><a href="#">Clubs</a></li>
+            </ul>
+        </li>
+        <li><a href="ContactUs.html"> Contact Us</a></li>
+        
+    </ul>
+</nav>
+
+    
+<main>
+   <form name="myform" action="survey.html" method="get">
+	
+	<h2>Student Information</h2>
+    <label for="firstname">First name:</label>
+    <input type="text" name="firstname" id="firstname" autofocus required><br>
+    <label for="lastname">Last name:</label>
+    <input type="text" name="lastname" id="lastname" required><br>
+     <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label><br>
+    <label for="ID">S Number: S00</label>
+    <input type ="number" name="ID" id="ID" required pattern = "\d{5}"><br>
+    
+    <h2>Additional Comments</h2>
+    <label for="Comments"></label>
+      <input type="text" id="Commentd" name="Comments" style="height:115px; width:65%;">
+       
+      <h2>Thank you !</h2>
+        <input type="submit" name="button" id="button" value="Submit">
+    <input type="reset" name="reset" id="reset"> 
+    </form>
+</main>
+    
+<aside>
+    <h3 class = "navhead">Student&nbsp;Favorites</h3>
+     <nav id="nav_list_left">
+    <ul>
+    <li><a href="GPACalc.html"><b>GPA calculator</b></a></li>
+    <li><a href="https://senator.aum.edu/prod/bwgkomre.P_RaceSurvey?p_menu_ind=Y&p_redirect=N&p_ret_location=bmenu.P_MainMnu"><b>Class registration</b></a></li> 
+    <li><a class = "current" href="TA.html"><b>Teaching Assisstant Application</b></a></li>
+    </ul>
+    </nav>
+</aside>
+
+<footer>
+&copy; RILEY TAYLOR 2020
+</footer>
+</body>
+</html>
